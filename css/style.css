@@ -1,0 +1,551 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+/* 
+---------------------*/
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*top image
+---------------------*/
+.top_image {
+	background: url(./../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.top_image h1 {
+	font-size: 48px;
+	margin-bottom: 40px;
+}
+
+.top_image p {
+	font-size: 36px;
+}
+
+
+/*グローバルナビゲーションバー
+---------------------*/
+.global_nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-bottom: 1px solid #efefef;
+	height: 80px;
+	background: white;
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+}
+
+.nav_logo {
+	width: 40%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.nav_logo a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav_logo img {
+	width: 55%;
+
+}
+
+.nav_list {
+	width: 60%;
+}
+
+
+.nav_list ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.nav_list a {
+	text-decoration: none;
+	color: #222222;
+}
+
+/* ABOUT
+---------------------*/
+.about {
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 40px;
+}
+
+.about h1 {
+	font-size: 24px;
+	color: #ffd61a;
+	padding-bottom: 24px;
+}
+
+.about .チーズアカデミーについて {
+	padding-bottom: 24px;
+}
+
+.about p {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+
+
+
+/* 画像の横スクロール */
+@keyframes loop {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.scroll_images {
+	display: flex;
+	overflow: hidden;
+	padding: 30px;
+}
+
+.scroll_list {
+	display: flex;
+	align-items: center;
+	animation: loop infinite linear 25s both;
+}
+
+
+/*COURSE
+---------------------*/
+.course {
+	text-align: center;
+}
+
+.course h1 {
+	font-size: 24px;
+	color: #222222;
+	margin-top: 64px;
+	/* padding-top: 24px; */
+}
+
+.course>div {
+	margin-top: 64px;
+}
+
+/* 2列表示 */
+.two_column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.two_column .col_left {
+	width: 50%;
+}
+
+.two_column .col_right {
+	width: 50%;
+}
+
+.two_column div.col_text {
+	text-align: left;
+	padding: 0px 48px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.two_column h2 {
+	font-size: 24px;
+	color: #222222;
+	padding-bottom: 40px;
+}
+
+.two_column .col_img {
+	width: 100%;
+}
+
+
+.two_column .col_img {
+	width: 100%;
+}
+
+/*NEWS
+---------------------*/
+.news {
+	text-align: center;
+}
+
+.news .ニュース {
+	margin-bottom: 64px;
+}
+
+.news h1 {
+	margin-top: 64px;
+	font-size: 24px;
+	color: #ffd61a;
+}
+
+/* ニュースリスト */
+
+.news_column_list {
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 28px;
+}
+
+.news_column_list img {
+	width: 100%;
+}
+
+.news_column_list div {
+	width: 28%;
+}
+
+.news_column_list h3 {
+	margin-top: 32px;
+	font-weight: normal;
+}
+
+.news_column_list p {
+	margin-top: 24px;
+}
+
+.news button {
+	margin-top: 56px;
+	background: #ffd61a;
+	width: 300px;
+	height: 60px;
+	color: white;
+}
+
+.news button:hover {
+	cursor: pointer;
+}
+
+/*Access
+---------------------*/
+.access {
+	margin-top: 48px;
+	background: #fafafa;
+	padding-bottom: 80px;
+}
+
+.access h1 {
+	padding-top: 64px;
+	text-align: center;
+}
+
+.access>p {
+	margin-top: 24px;
+	text-align: center;
+}
+
+.access>iframe {
+	margin-top: 64px;
+	width: 100%;
+}
+
+.access dl {
+	margin-top: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.access dl div {
+	width: 700px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.access dl dt {
+	width: 100px;
+	text-align: left;
+}
+
+.access dl dd {
+	margin-left: 48px;
+	text-align: left;
+}
+
+/*CONTACT
+---------------------*/
+.contact {
+	margin-top: 64px;
+}
+
+.contact h1 {
+	text-align: center;
+}
+
+.contact .申し込み {
+	margin-bottom: 64px;
+	text-align: center;
+}
+
+.contact p {
+	text-align: center;
+}
+
+.contact_p1 {
+	margin-bottom: 32px;
+}
+
+/* form */
+.contact_form_area {
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact_form_area .form_left {
+	width: 7em;
+	margin-right: 120px;
+}
+
+/* form_area_basic_info */
+.contact_form_area .form_area_basic_info {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	row-gap: 24px;
+	margin-bottom: 40px;
+}
+
+.contact_form_area .form_content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.contact_form_area .form_area_motivation_info {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 32px;
+}
+
+.contact_form_area .form_area_motivation_info .motivation_list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	row-gap: 24px;
+}
+
+.contact_form_area .form_area_detail_info {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 40px;
+}
+
+
+
+/* input(右側)のデザイン */
+
+/* テキストエリア */
+.contact_form_area input[type="text"],
+input[type="email"] {
+	border: 1px #bfbfbf solid;
+	width: 328px;
+	height: 36px;
+}
+
+/* 志望動機エリア */
+.contact_form_area .motivation_list {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 24px;
+}
+
+.contact_form_area .form_area_motivation_info input[type="radio"] {
+	display: none;
+}
+
+/* .contact_form_area .form_area_motivation_info label::before {
+	content: " ";
+	width: 1.1em;
+	height: 1.1em;
+	display: inline-block;
+	background: #f0ebe5;
+	border-radius: 3px;
+	margin-right: 40px;
+} */
+
+.radio_button_true {
+	width: 1.1em;
+	height: 1.1em;
+	display: inline-block;
+	background: #f0ebe5;
+	border-radius: 3px;
+	margin-right: 40px;
+}
+
+.motivation_list>div {
+	position: relative;
+}
+
+.radio_button_false {
+	display: none;
+	position: absolute;
+	width: 7px;
+	height: 14px;
+	border: solid #000;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	top: 3px;
+	left: 5px;
+}
+
+.contact_form_area .form_area_motivation_info input[type="radio"]:checked~.radio_button_false {
+	display: block;
+}
+
+
+.contact_form_area input[type="radio"]:hover {
+	cursor: pointer;
+}
+
+.contact_form_area .form_area_motivation_info label:hover {
+	cursor: pointer;
+}
+
+.contact_form_area .form_area_motivation_info label:hover input[type="radio"]+label {
+	color: red;
+	border: #222222 dotted 1px;
+	background: red;
+	/* content: " "; */
+	/* padding-left: 20px; */
+}
+
+/* 詳細エリア */
+.contact_form_area textarea {
+	border: 1px #bfbfbf solid;
+}
+
+.contact_form_area #detail {
+	width: 328px;
+	height: 108px;
+}
+
+/* button */
+.contact_form_area .form_button_area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact_form_area button {
+	width: 298px;
+	height: 54px;
+
+	background: #ffd61a;
+	font-size: 18px;
+	color: white;
+	margin-top: 40px;
+}
+
+.contact_form_area button:hover {
+	cursor: pointer;
+}
+
+/* footer
+_________________ */
+footer {
+	margin-top: 150px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	background: #707070;
+	text-align: center;
+	color: white;
+}
+
+
+/* go to TOP
+_________________ */
+
+div.go_top_button {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	background: gray;
+	right: 10px;
+	bottom: 10px;
+	opacity: 0.6;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+
+}
+
+.go_top_button>a {
+	/* position: absolute; */
+	display: block;
+	color: white;
+	text-decoration: none;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+}
+
+.go_top_button a::before {
+	content: " ";
+	display: block;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border: 5px solid white;
+	border-width: 3px 0px 0px 3px;
+	transform: rotate(45deg);
+	top: 25px;
+	left: 15px;
+}
