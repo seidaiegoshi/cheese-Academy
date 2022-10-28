@@ -1,5 +1,8 @@
 # 初めての課題、チーズアカデミー
 
+閲覧はこちらから
+https://seidaiegoshi.github.io/cheese-Academy/
 
-Flutterはこちら
+
+Flutterアプリはこちら
 https://cheese-academiy.web.app/#/
